@@ -81,11 +81,11 @@ def main():
 
         elif args.command == "buy_ticket":
             ticket_id = ticket_service.buy_ticket(args.user_id, args.trip_id)
-            print(f" Ticket purchased! Ticket ID: {ticket_id}")
+            print(f" =====Ticket purchased! Ticket ID: {ticket_id}")
 
         elif args.command == "cancel_ticket":
             refund = ticket_service.cancel_ticket(args.ticket_id, args.user_id)
-            print(f" Ticket cancelled! Refund: {refund:.2f}")
+            print(f"===== Ticket cancelled! Refund: {refund:.2f}")
 
         elif args.command == "total_income":
             admin_service.total_income()
